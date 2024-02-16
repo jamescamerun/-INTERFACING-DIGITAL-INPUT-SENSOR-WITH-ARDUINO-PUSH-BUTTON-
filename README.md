@@ -1,8 +1,8 @@
 ## INTERFACING DIGITAL INPUT SENSOR WITH ARDUINO PUSH BUTTON
-## DATE :
-## NAME :																			             
-## ROLLNUMBER :
-## DEPARTMENT 
+## DATE :16/2/2024
+## NAME :BESTHA NARESH																			             
+## ROLLNUMBER :21221080012
+## DEPARTMENT mechanical engineering
 
 
 ## AIM:
@@ -61,7 +61,31 @@ FIGURE -03
 
 
 
-## PROGRAM 
+## PROGRAM int led=4;
+int pushbutton=3;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  pinMode (pushbutton,INPUT);
+}
+
+void loop()
+{
+  int pb;
+  pb=digitalRead(pushbutton);
+  if(pb==HIGH)
+	{
+  		digitalWrite(led, HIGH);
+  		delay(500); 
+  		digitalWrite(led, LOW);
+  		delay(500);
+	}
+	else
+	{
+  		delay(500);
+  		digitalWrite(led, LOW);
+	}
+}
  
  
 
@@ -79,7 +103,7 @@ FIGURE -03
 
 
 
-## OUTPUT OF SIMULATION :
+## OUTPUT OF SIMULATION :file:///C:/Users/besth/Downloads/Stunning%20Gaaris-Elzing.pdf
 
-[My image](username.github.com/repository/img/image.jpg)
+[My image](username.github.com/repository/img/imagbe.jpg)
 
