@@ -1,8 +1,8 @@
 ## INTERFACING DIGITAL INPUT SENSOR WITH ARDUINO PUSH BUTTON
-## DATE :
-## NAME :																			             
-## ROLLNUMBER :
-## DEPARTMENT 
+## DATE :16/2/2024
+## NAME :BESTHA NARESH																			             
+## ROLLNUMBER :212221080012
+## DEPARTMENT mechanical engineering
 
 
 ## AIM:
@@ -49,7 +49,7 @@ FIGURE-02
 
 
 
-## CIRCUIT DIAGRAM 
+## CIRCUIT DIAGRAM file:///C:/Users/besth/Downloads/Stunning%20Gaaris-Elzing.pdf
 
 
 ![image](https://user-images.githubusercontent.com/36288975/163530437-87a0afbd-b3c9-44ad-b907-5de63486fb9d.png)
@@ -61,7 +61,31 @@ FIGURE -03
 
 
 
-## PROGRAM 
+## PROGRAM int led=4;
+int pushbutton=3;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  pinMode (pushbutton,INPUT);
+}
+
+void loop()
+{
+  int pb;
+  pb=digitalRead(pushbutton);
+  if(pb==HIGH)
+	{
+  		digitalWrite(led, HIGH);
+  		delay(500); 
+  		digitalWrite(led, LOW);
+  		delay(500);
+	}
+	else
+	{
+  		delay(500);
+  		digitalWrite(led, LOW);
+	}
+}
  
  
 
@@ -79,7 +103,8 @@ FIGURE -03
 
 
 
-## OUTPUT OF SIMULATION :
+## OUTPUT OF SIMULATION : blinking![Screenshot 2024-02-15 111748](https://github.com/vasanthkumarch/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/160204235/f5580075-e139-4f18-9c3b-3cca6e94e40d)
+
 
 [My image](username.github.com/repository/img/image.jpg)
 
